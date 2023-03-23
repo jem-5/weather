@@ -1,4 +1,5 @@
 import { displayWeather, displayIcon } from "./display";
+console.log(process.env);
 
 let weatherInfo = document.querySelector("#weatherInfo");
 let loader = document.querySelector(".loader");
