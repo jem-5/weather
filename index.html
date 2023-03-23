@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="container">
+       
+        <label class="switch">
+            <input id="tempUnits" type="checkbox">
+            <span class="slider round"></span>
+            <div id="sliderText"></div>
+        </label>
+        
+        <div id="newCityForm">
+            <input type="text" id="city" name="city" placeholder="Search for a city"><br>
+            <button type="submit"><img id="submitBtn" src="assets/loupe.png" alt="submit"></button>
+        </div>
+   
+        <div class="loader"></div>
+        <div id="weatherInfo">
+            <div id="cityName" class="weatherItem"></div>
+            <div id="desc" class="weatherItem"></div>
+            <div id="temp" class="weatherItem tempItem celsiusUnit"></div>
+            <div id="icon"></div>
+
+            <div id="feelsLike" class="weatherItem tempItem celsiusUnit"></div>
+            <div id="wind" class="weatherItem"></div>
+            <div id="clouds" class="weatherItem"></div>
+            
+            <div id="minTemp" class="weatherItem tempItem celsiusUnit"></div>
+            <div id="maxTemp" class="weatherItem tempItem celsiusUnit"></div>
+        </div>
+        
+    
+
+    </div>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
